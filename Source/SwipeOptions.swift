@@ -31,10 +31,21 @@ public struct SwipeOptions {
     /// - note: By default, the value is set to the table/collection view divided by the number of action buttons minus some additional padding. If the value is set to 0, then word wrapping will not occur and the buttons will grow as large as needed to fit the entire title/image.
     public var maximumButtonWidth: CGFloat?
     
+    /// The largest allowable button height.
+
+    public var maximumButtonHeight: CGFloat?
+    
     /// The smallest allowable button width.
     ///
     /// - note: By default, the system chooses an appropriate size.
     public var minimumButtonWidth: CGFloat?
+    
+    /// The corner radius for buttons.
+    ///
+    /// - note: By default, there is square appearance.
+    public var cornerRadius: CGFloat?
+    
+    public var buttonsViewInsets: UIEdgeInsets = UIEdgeInsets.zero
     
     /// The vertical alignment mode used for when a button image and title are present.
     public var buttonVerticalAlignment: SwipeVerticalAlignment = .centerFirstBaseline
